@@ -1,0 +1,8 @@
+D:\Workspace\BrianAndAlix\BrianandAlix.DataLayers\bin\Debug\BrianandAlix.DataLayers.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.DataLayers\bin\Debug\BrianandAlix.DataLayers.pdb
+D:\Workspace\BrianAndAlix\BrianandAlix.DataLayers\bin\Debug\EntityFramework.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.DataLayers\bin\Debug\EntityFramework.xml
+D:\Workspace\BrianAndAlix\BrianandAlix.DataLayers\obj\Debug\BrianandAlix.DataLayers.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.DataLayers\obj\Debug\BrianandAlix.DataLayers.pdb
+D:\Workspace\BrianAndAlix\BrianandAlix.DataLayers\obj\Debug\BrianandAlix.DataLayers.csprojResolveAssemblyReference.cache
+D:\Workspace\BrianAndAlix\BrianandAlix.DataLayers\bin\Debug\BrianandAlix.DataLayers.dll.config

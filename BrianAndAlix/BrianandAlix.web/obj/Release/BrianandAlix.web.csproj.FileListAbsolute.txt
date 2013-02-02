@@ -1,0 +1,5 @@
+D:\Workspace\BrianAndAlix\BrianandAlix.web\bin\BrianandAlix.web.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.web\bin\BrianandAlix.web.pdb
+D:\Workspace\BrianAndAlix\BrianandAlix.web\obj\Release\BrianandAlix.web.csprojResolveAssemblyReference.cache
+D:\Workspace\BrianAndAlix\BrianandAlix.web\obj\Release\BrianandAlix.web.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.web\obj\Release\BrianandAlix.web.pdb

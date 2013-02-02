@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="BrianAlixDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="BrianAlixDataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="People" EntityType="BrianAlixDataModel.Person" />
+    <EntitySet Name="Guests" EntityType="BrianAlixDataModel.Guests" />
+    <EntitySet Name="RequestedSongs" EntityType="BrianAlixDataModel.RequestedSongs" />
+    <AssociationSet Name="PersonGuests" Association="BrianAlixDataModel.PersonGuests">
+      <End Role="Person" EntitySet="People" />
+      <End Role="Guests" EntitySet="Guests" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" Nullable="false" />
+    <Property Type="String" Name="LastName" Nullable="false" />
+    <NavigationProperty Name="Guests" Relationship="BrianAlixDataModel.PersonGuests" FromRole="Person" ToRole="Guests" />
+  </EntityType>
+  <EntityType Name="Guests">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Boolean" Name="IsGuests" Nullable="false" />
+    <Property Type="Int32" Name="Adults" Nullable="true" />
+    <Property Type="Int32" Name="Children" Nullable="true" />
+    <NavigationProperty Name="Person" Relationship="BrianAlixDataModel.PersonGuests" FromRole="Guests" ToRole="Person" />
+    <Property Type="Int32" Name="PersonId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RequestedSongs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SongTitle" Nullable="false" />
+    <Property Type="String" Name="Artist" Nullable="true" />
+  </EntityType>
+  <Association Name="PersonGuests">
+    <End Type="BrianAlixDataModel.Person" Role="Person" Multiplicity="1" />
+    <End Type="BrianAlixDataModel.Guests" Role="Guests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Guests">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

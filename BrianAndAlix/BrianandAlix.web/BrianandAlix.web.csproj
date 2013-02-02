@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF12A4AA-40FE-4E93-A172-9449AD77C573}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrianandAlix.web</RootNamespace>
+    <AssemblyName>BrianandAlix.web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AjaxWebMethods.aspx" />
+    <Content Include="Bridal-Party.aspx" />
+    <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome-ie7.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\fonts.css" />
+    <Content Include="css\supersized.css" />
+    <Content Include="css\supersized.shutter.css" />
+    <Content Include="font\DAYPBL__-webfont.svg" />
+    <Content Include="font\Nick%27s Fonts License.txt" />
+    <Content Include="imgs\bridalParty\bridesmaids.jpg" />
+    <Content Include="imgs\bridalParty\bridesmaids\KK.jpeg" />
+    <Content Include="imgs\bridalParty\bridesmaids\Natalie.jpeg" />
+    <Content Include="imgs\bridalParty\groomsman.jpg" />
+    <Content Include="imgs\common\brianAlixSaveTheDate.jpg" />
+    <Content Include="imgs\gallery\japanLandscape.htm" />
+    <Content Include="js\libs\bootstrap.min.js" />
+    <Content Include="js\libs\jquery.easing.min.js" />
+    <Content Include="css\main.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\normalize.min.css" />
+    <Content Include="css\supersized.core.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="font\fontawesome-webfont.svg" />
+    <Content Include="imgs\common\baLogo.png" />
+    <Content Include="imgs\common\baLogoSmall.png" />
+    <Content Include="imgs\common\baNavIcon.png" />
+    <Content Include="imgs\common\baNavIconReversed.png" />
+    <Content Include="imgs\common\bkgdLight.jpg" />
+    <Content Include="imgs\common\bkgdMain.png" />
+    <Content Include="imgs\common\burlap.jpg" />
+    <Content Include="imgs\common\DSCN0244.JPG" />
+    <Content Include="imgs\common\DSCN0794.JPG" />
+    <Content Include="imgs\common\mainBkgd.jpg" />
+    <Content Include="imgs\gallery\baHockey.jpg" />
+    <Content Include="imgs\gallery\baKayak.jpg" />
+    <Content Include="imgs\gallery\baWedding.jpg" />
+    <Content Include="imgs\gallery\baSnorkel.JPG" />
+    <Content Include="js\libs\jquery-1.8.0.min.js" />
+    <Content Include="js\libs\modernizr-2.6.1-respond-1.1.0.min.js" />
+    <Content Include="js\libs\supersized.3.2.7.js" />
+    <Content Include="js\libs\supersized.core.3.2.1.min.js" />
+    <Content Include="js\libs\supersized.shutter.min.js" />
+    <Content Include="js\libs\validator.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\photoGallery.js" />
+    <Content Include="Our-Story.aspx" />
+    <Content Include="RSVP.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxWebMethods.aspx.cs">
+      <DependentUpon>AjaxWebMethods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxWebMethods.aspx.designer.cs">
+      <DependentUpon>AjaxWebMethods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bridal-Party.aspx.cs">
+      <DependentUpon>Bridal-Party.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bridal-Party.aspx.designer.cs">
+      <DependentUpon>Bridal-Party.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guests\CurrentGuest.cs" />
+    <Compile Include="Our-Story.aspx.cs">
+      <DependentUpon>Our-Story.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Our-Story.aspx.designer.cs">
+      <DependentUpon>Our-Story.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="masters\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RSVP.aspx.cs">
+      <DependentUpon>RSVP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RSVP.aspx.designer.cs">
+      <DependentUpon>RSVP.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\gallery.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="masters\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="font\fontawesome-webfont.eot" />
+    <Content Include="font\fontawesome-webfont.ttf" />
+    <Content Include="font\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="font\DAYPBL__-webfont.eot" />
+    <Content Include="font\DAYPBL__-webfont.ttf" />
+    <Content Include="font\DAYPBL__-webfont.woff" />
+    <Content Include="data\bridesmaids.json" />
+    <Content Include="data\bros.json" />
+    <None Include="Properties\PublishProfiles\BrianAndAlix.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imgs\bridalParty\bros\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrianandAlix.BusinessLayer\BrianandAlix.BusinessLayer.csproj">
+      <Project>{5f52ed08-a806-4585-b9e5-b8edc74edd3b}</Project>
+      <Name>BrianandAlix.BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12106</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

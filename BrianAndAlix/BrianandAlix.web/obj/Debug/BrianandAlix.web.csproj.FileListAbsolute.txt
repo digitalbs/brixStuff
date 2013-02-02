@@ -1,0 +1,14 @@
+C:\Users\Brians\Documents\GitHub\Brian-and-Alix-\Documents\GitHub\brianandalix\BrianandAlix.web\bin\BrianandAlix.web.dll
+C:\Users\Brians\Documents\GitHub\Brian-and-Alix-\Documents\GitHub\brianandalix\BrianandAlix.web\bin\BrianandAlix.web.pdb
+C:\Users\Brians\Documents\GitHub\Brian-and-Alix-\Documents\GitHub\brianandalix\BrianandAlix.web\obj\Debug\BrianandAlix.web.csprojResolveAssemblyReference.cache
+C:\Users\Brians\Documents\GitHub\Brian-and-Alix-\Documents\GitHub\brianandalix\BrianandAlix.web\obj\Debug\BrianandAlix.web.dll
+C:\Users\Brians\Documents\GitHub\Brian-and-Alix-\Documents\GitHub\brianandalix\BrianandAlix.web\obj\Debug\BrianandAlix.web.pdb
+D:\Workspace\BrianAndAlix\BrianandAlix.web\obj\Debug\BrianandAlix.web.csprojResolveAssemblyReference.cache
+D:\Workspace\BrianAndAlix\BrianandAlix.web\bin\BrianandAlix.web.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.web\bin\BrianandAlix.web.pdb
+D:\Workspace\BrianAndAlix\BrianandAlix.web\bin\BrianandAlix.DataLayers.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.web\bin\EntityFramework.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.web\bin\BrianandAlix.DataLayers.pdb
+D:\Workspace\BrianAndAlix\BrianandAlix.web\bin\EntityFramework.xml
+D:\Workspace\BrianAndAlix\BrianandAlix.web\obj\Debug\BrianandAlix.web.dll
+D:\Workspace\BrianAndAlix\BrianandAlix.web\obj\Debug\BrianandAlix.web.pdb

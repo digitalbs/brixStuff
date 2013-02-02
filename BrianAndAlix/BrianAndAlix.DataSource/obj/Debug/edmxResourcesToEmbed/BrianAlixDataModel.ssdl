@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BrianAlixDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BrianAlixDataModelStoreContainer">
+    <EntitySet Name="People" EntityType="BrianAlixDataModel.Store.People" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Guests" EntityType="BrianAlixDataModel.Store.Guests" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RequestedSongs" EntityType="BrianAlixDataModel.Store.RequestedSongs" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="PersonGuests" Association="BrianAlixDataModel.Store.PersonGuests">
+      <End Role="Person" EntitySet="People" />
+      <End Role="Guests" EntitySet="Guests" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Guests">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IsGuests" Type="bit" Nullable="false" />
+    <Property Name="Adults" Type="int" Nullable="true" />
+    <Property Name="Children" Type="int" Nullable="true" />
+    <Property Name="PersonId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RequestedSongs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SongTitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Artist" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="PersonGuests">
+    <End Role="Person" Type="BrianAlixDataModel.Store.People" Multiplicity="1" />
+    <End Role="Guests" Type="BrianAlixDataModel.Store.Guests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Guests">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

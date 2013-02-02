@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianandAlix.web", "BrianandAlix.web\BrianandAlix.web.csproj", "{CF12A4AA-40FE-4E93-A172-9449AD77C573}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5F52ED08-A806-4585-B9E5-B8EDC74EDD3B} = {5F52ED08-A806-4585-B9E5-B8EDC74EDD3B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianandAlix.BusinessLayer", "BrianandAlix.BusinessLayer\BrianandAlix.BusinessLayer.csproj", "{5F52ED08-A806-4585-B9E5-B8EDC74EDD3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrianandAlix.DataLayers", "BrianandAlix.DataLayers\BrianandAlix.DataLayers.csproj", "{274DAA86-A586-4467-93E1-32771E7D791B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF12A4AA-40FE-4E93-A172-9449AD77C573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF12A4AA-40FE-4E93-A172-9449AD77C573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF12A4AA-40FE-4E93-A172-9449AD77C573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF12A4AA-40FE-4E93-A172-9449AD77C573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F52ED08-A806-4585-B9E5-B8EDC74EDD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F52ED08-A806-4585-B9E5-B8EDC74EDD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F52ED08-A806-4585-B9E5-B8EDC74EDD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F52ED08-A806-4585-B9E5-B8EDC74EDD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274DAA86-A586-4467-93E1-32771E7D791B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274DAA86-A586-4467-93E1-32771E7D791B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274DAA86-A586-4467-93E1-32771E7D791B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274DAA86-A586-4467-93E1-32771E7D791B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
